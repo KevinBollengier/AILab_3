@@ -1,18 +1,18 @@
 import fileinput
 from queue import PriorityQueue
-import AILab_3.SearchNode
+from AILab_3 import SearchNode
 
 
 def main():
-    """lines = []
+    lines = []
     for line in fileinput.input():
         lines.append(line)
-    maximumHeight = lines[0]
-    # initial_location = lines[1]"""
-    initial_location = "(A); (B); (C)"
-    goal_location = "(A, C); (B); X"
-    max_height = 2
-    """goalState = lines[2]"""
+    max_height = lines[0]
+    initial_location = lines[1]
+    # initial_location = "(A); (B); (C)"
+    # goal_location = "(A, C); (B); X"
+    # max_height = 2
+    goal_location = lines[2]
     pick_up = 0.5
     moveLeftRight = 1
     putDown = 0.5
